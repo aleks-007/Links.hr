@@ -10,7 +10,7 @@
 
 ## Execution:
 ---------------
-*   Go to project root via cmd -> encoding issues at the moment so please use 
+*   Go to project root via cmd 
 ```sh
 $ mvn test -Dtest=hr.links.ui.tests.* test
 ``` 

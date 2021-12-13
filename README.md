@@ -10,10 +10,17 @@
 
 ## Execution:
 ---------------
-*   Go to project root via cmd -> encoding issues at the moment so please use 
+*   Go to project root via cmd 
 ```sh
 $ mvn test -Dtest=hr.links.ui.tests.* test
 ``` 
 *   Run tests from Intelij
 *   Run by testng.xml from InteliJ
 
+## Clone:
+---------------
+```sh
+$ git clone https://github.com/aleks-007/Links.hr.git
+$ cd Links.hr
+$ git pull
+``` 

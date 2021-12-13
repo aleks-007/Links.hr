@@ -22,7 +22,9 @@ public class Asserts {
         Assert.assertEquals(expectedElement, getValueFrom(actualElement, atr));
     }
     public static void assertActualTextOfElementIsEqualToExpected( WebElement actualElement, String expectedElement) throws IOException {
-        Assert.assertEquals( decodeText(getTextFrom(actualElement), "UTF-8"), expectedElement);
+//        Assert.assertEquals( decodeText(getTextFrom(actualElement), "UTF-8"), expectedElement);
+                Assert.assertEquals( getTextFrom(actualElement), expectedElement);
+
     }
 
     // Simple methods for creating complex methods

@@ -104,6 +104,7 @@ public class RegisterPage extends BasePage{
         assertActualTextOfElementIsEqualToExpected( successRegisterMessage, REGISTER_SUCCESS_MESSAGE);
         return this;
     }
+
     public RegisterPage assertRequiredFields(){
         assertActualValueOfElementIsEqualToExpected(NAME_REQUIRED_MESSAGE, name, "data-val-required");
         assertActualValueOfElementIsEqualToExpected(LAST_NAME_REQUIRED_MESSAGE, lastName, "data-val-required");

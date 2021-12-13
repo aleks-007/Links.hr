@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite">
+    <test name = "tests">
+    <classes>
+        <class name="hr.links.ui.tests.RegisterUserEmptyForm"/>
+        <class name="hr.links.ui.tests.RegisterUserPopulatingAllFields"/>
+        <class name="hr.links.ui.tests.RegisterUserPopulatingRequiredFields"/>
+    </classes>
+    </test>
+</suite>

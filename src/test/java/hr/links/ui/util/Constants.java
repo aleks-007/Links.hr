@@ -18,7 +18,7 @@ public class Constants {
     public static final Integer DAY_OF_BIRTH = 12;
     public static final Integer MONTH_OF_BIRTH = 12;
     public static final Integer YEAR_OF_BIRTH = 1992;
-    public static final String EMAIL = getRandomInt(1, 200) + "todorovic7@yahoo.com";
+    public static final String EMAIL = getRandomInt(100, 10000) + "todorovic7@yahoo.com";
     public static final String STREET_ADDRESS = "Julska 8";
     public static final Integer POST_CODE = 21;
     public static final String CITY = "Novi Sad";

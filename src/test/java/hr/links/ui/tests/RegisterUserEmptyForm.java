@@ -1,4 +1,4 @@
-package hr.links.ui.tests.register;
+package hr.links.ui.tests;
 
 import hr.links.ui.tests.BaseTest;
 import org.testng.annotations.BeforeMethod;

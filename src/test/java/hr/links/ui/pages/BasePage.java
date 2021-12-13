@@ -17,10 +17,15 @@ public class BasePage {
 
     @FindBy(id="eu-cookie-ok") WebElement cookie;
 
-    public BasePage acceptCookies(){
-        if(cookie.isDisplayed())
-        { click(cookie);}
-        return this;
+    public void acceptCookies(){
+        try{
+            if(cookie.isDisplayed())
+            { click(cookie);}
+        }
+        catch(Exception e){
+            System.out.println("");
+        }
+
     }
 
 }

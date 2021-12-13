@@ -17,3 +17,10 @@ $ mvn test -Dtest=hr.links.ui.tests.* test
 *   Run tests from Intelij
 *   Run by testng.xml from InteliJ
 
+## Clone:
+---------------
+```sh
+$ git clone https://github.com/aleks-007/Links.hr.git
+$ cd Links.hr
+$ git pull
+``` 

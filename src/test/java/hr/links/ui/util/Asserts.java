@@ -3,9 +3,10 @@ package hr.links.ui.util;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
+import java.io.IOException;
+
 import static hr.links.ui.util.Waits.waitToBeVisible;
-import static hr.links.ui.util.Wrappers.getTextFrom;
-import static hr.links.ui.util.Wrappers.getValueFrom;
+import static hr.links.ui.util.Wrappers.*;
 
 public class Asserts {
     public static void assertElementIsNotPresent(WebElement element) {
@@ -20,8 +21,8 @@ public class Asserts {
     public static void assertActualValueOfElementIsEqualToExpected(String expectedElement, WebElement actualElement, String atr) {
         Assert.assertEquals(expectedElement, getValueFrom(actualElement, atr));
     }
-    public static void assertActualTextOfElementIsEqualToExpected(String expectedElement, WebElement actualElement) {
-        Assert.assertEquals(expectedElement, getTextFrom(actualElement));
+    public static void assertActualTextOfElementIsEqualToExpected( WebElement actualElement, String expectedElement) throws IOException {
+        Assert.assertEquals( decodeText(getTextFrom(actualElement), "UTF-8"), expectedElement);
     }
 
     // Simple methods for creating complex methods

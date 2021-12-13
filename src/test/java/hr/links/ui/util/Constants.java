@@ -1,9 +1,6 @@
 package hr.links.ui.util;
 
-import java.util.Random;
-
 import static hr.links.ui.util.Wrappers.getRandomInt;
-import static javax.swing.UIManager.get;
 
 public class Constants {
 
@@ -18,7 +15,7 @@ public class Constants {
     public static final Integer DAY_OF_BIRTH = 12;
     public static final Integer MONTH_OF_BIRTH = 12;
     public static final Integer YEAR_OF_BIRTH = 1992;
-    public static final String EMAIL = getRandomInt(100, 10000) + "todorovic7@yahoo.com";
+    public static final String EMAIL(Integer integer) { return integer + "todorovic7@yahoo.com";}
     public static final String STREET_ADDRESS = "Julska 8";
     public static final Integer POST_CODE = 21;
     public static final String CITY = "Novi Sad";

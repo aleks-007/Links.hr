@@ -24,9 +24,9 @@ public class BaseTest {
         basePage.acceptCookies();
     }
 
-//    @AfterClass(alwaysRun = true)
-//    protected void tearDown() {
-//        BrowserFactory.quitDriver();
-//    }
+    @AfterClass(alwaysRun = true)
+    protected void tearDown() {
+        BrowserFactory.quitDriver();
+    }
 
 }

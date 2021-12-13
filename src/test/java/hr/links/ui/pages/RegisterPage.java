@@ -4,6 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
+import java.io.IOException;
+
 import static hr.links.ui.util.Asserts.*;
 import static hr.links.ui.util.Constants.*;
 import static hr.links.ui.util.Waits.waitToBeVisible;
@@ -96,10 +98,10 @@ public class RegisterPage extends BasePage{
 
     //Assertions
 
-    public RegisterPage assertSuccessRegisterMessageIsDisplayed(){
+    public RegisterPage assertSuccessRegisterMessageIsDisplayed() throws IOException {
         waitToBeVisible(successRegisterMessage);
         assertElementIsPresent(successRegisterMessage);
-        assertActualTextOfElementIsEqualToExpected(REGISTER_SUCCESS_MESSAGE, successRegisterMessage);
+        assertActualTextOfElementIsEqualToExpected( successRegisterMessage, REGISTER_SUCCESS_MESSAGE);
         return this;
     }
     public RegisterPage assertRequiredFields(){
